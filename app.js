@@ -1,5 +1,5 @@
 alert('Boas vindo ao jogo do número secreto!');
-let numeroSecreto = 8;
+let numeroSecreto = 2;
 console.log(numeroSecreto)
 let chute = prompt('Escolha um número entre 1 e 10');
 
