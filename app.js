@@ -10,7 +10,7 @@ while (chute != numeroSecreto) {
 
     // Comentário
     if (chute == numeroSecreto) {
-        console.log(`Isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas.`)
+        break;
     } else {
         if (chute < numeroSecreto) {
             alert(`O numero secreto é maior que ${chute}`);
@@ -19,3 +19,9 @@ while (chute != numeroSecreto) {
         };
     };
 };
+
+if (tentativas > 1) {
+    alert(`Isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas.`)
+} else {
+    alert(`Isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativa.`)
+}
