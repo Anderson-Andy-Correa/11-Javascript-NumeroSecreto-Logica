@@ -1,7 +1,7 @@
 alert('Boas vindo ao jogo do número secreto!');
-let numeroMaximo = 100;
+let numeroMaximo = 500;
 let numeroMinimo = 1;
-let numeroSecreto = parseInt(Math.random() * numeroMaximo + numeroMinimo);
+let numeroSecreto = parseInt(Math.random() * (numeroMaximo - numeroMinimo + 1) + numeroMinimo);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 0;
@@ -22,5 +22,5 @@ while (chute != numeroSecreto) {
     };
 };
 
-let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'
-alert(`Isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`)
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(`Isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
